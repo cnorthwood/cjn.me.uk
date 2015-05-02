@@ -1,0 +1,19 @@
+.get-in-touch {
+  background-color: $light-background;
+}
+
+.contact-methods {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    margin: 0;
+    padding: 0 1em;
+  }
+
+  .fa {
+    font-size: 3em;
+  }
+}

@@ -1,0 +1,67 @@
+@mixin belief-icon($icon-url) {
+  background: image-url($icon-url) no-repeat center;
+  background-size: contain;
+  content: '';
+  display: block;
+  margin: 2rem 0;
+  padding-top: 30%;
+  width: 100%;
+
+  @include media($medium-screen) {
+    padding-top: 50%;
+  }
+}
+
+.beliefs {
+  @include row();
+}
+
+.belief {
+  @include span-columns(12);
+
+  @include media($medium-screen) {
+    @include span-columns(4);
+  }
+}
+
+.belief__title {
+  @extend %subheading;
+
+  @include media($medium-screen) {
+    text-align: center;
+  }
+}
+
+.belief--delivery .belief__title:after {
+  @include belief-icon('delivery.svg');
+}
+
+.belief--development .belief__title:after {
+  @include belief-icon('development.svg');
+}
+
+.belief--teamwork .belief__title:after {
+  @include belief-icon('teamwork.svg');
+}
+
+
+.belief__list {
+  line-height: 1.4em;
+  list-style-type: square;
+
+  @include media($medium-screen) {
+    line-height: 1.25em;
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      border-bottom: 1px solid lighten($black, 30%);
+      padding: 1rem 0;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+
+}

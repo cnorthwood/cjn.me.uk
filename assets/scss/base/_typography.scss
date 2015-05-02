@@ -1,0 +1,43 @@
+%heading {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+
+  @include media($medium-screen) {
+    font-size: 2.6rem;
+  }
+}
+
+%subheading {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+
+  @include media($medium-screen) {
+    font-size: 2rem;
+  }
+}
+
+body {
+  color: $dark-foreground;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: $dark-foreground;
+
+  &:hover,
+  &:focus {
+    color: $highlight;
+    transition: .4s;
+  }
+}
+
+p {
+  line-height: 1.25em;
+}

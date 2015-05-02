@@ -1,0 +1,27 @@
+.what-ive-done__item {
+  @include row;
+  margin: 2rem 0;
+}
+
+.what-ive-done__detail {
+  @include span-columns(12);
+
+  @include media($medium-screen) {
+    @include span-columns(6);
+  }
+}
+
+.what-ive-done__image {
+  @include span-columns(12);
+
+  text-align: center;
+
+  @include media($medium-screen) {
+    @include span-columns(6);
+    @include omega();
+  }
+}
+
+.what-ive-done__screenshot {
+  max-width: 100%;
+}

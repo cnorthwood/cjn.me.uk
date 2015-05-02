@@ -1,0 +1,8 @@
+.copyright {
+  @include outer-container;
+  @include pad;
+
+  color: lighten($dark-foreground, 30%);
+  font-size: .8em;
+  font-weight: 300;
+}

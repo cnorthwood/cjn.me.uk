@@ -1,0 +1,26 @@
+.portfolio-section {
+  @include outer-container;
+  @include pad(3rem default 3rem default);
+
+  p {
+    max-width: 40em;
+  }
+}
+
+.portfolio-section__title {
+  @extend %heading;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.portfolio-section__timestamp {
+  color: lighten($dark-foreground, 30%);
+  font-size: .8em;
+  font-weight: 300;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.portfolio-section__item-title {
+  @extend %subheading;
+}
