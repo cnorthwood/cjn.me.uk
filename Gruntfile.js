@@ -22,13 +22,21 @@ module.exports = function(grunt) {
                     dest: 'dist/static',
                     expand: true
                 }]
+            },
+            svg: {
+                files: [{
+                    cwd: 'assets/',
+                    src: ['images/**/*.svg'],
+                    dest: 'dist/static',
+                    expand: true
+                }]
             }
         },
         imagemin: {
-            'content-images': {
+            images: {
                 files: [{
                     cwd: 'assets',
-                    src: ['content-images/**/*.{png,jpg}'],
+                    src: ['images/**/*.{png,jpg}'],
                     dest: 'dist/static',
                     expand: true
                 }]
@@ -56,6 +64,14 @@ module.exports = function(grunt) {
             styles: {
                 files: ['assets/scss/compass_config.rb', 'assets/scss/**/*.scss'],
                 tasks: ['styles-dev']
+            },
+            images: {
+                files: ['assets/images/**/*.{png,jpg}'],
+                tasks: ['imagemin:images']
+            },
+            svg: {
+                files: ['assets/images/**/*.svg'],
+                tasks: ['copy:svg']
             }
         }
     });
@@ -74,8 +90,8 @@ module.exports = function(grunt) {
         shelljs.exec('bundle install');
     });
 
-    grunt.registerTask('default', ['bower', 'bootstrap-compass', 'copy:favicon', 'imagemin:content-images', 'styles']);
-    grunt.registerTask('dev', ['bower', 'bootstrap-compass', 'copy:favicon', 'imagemin:content-images', 'styles-dev', 'watch']);
+    grunt.registerTask('default', ['bower', 'bootstrap-compass', 'copy:favicon', 'copy:svg', 'imagemin:images', 'styles']);
+    grunt.registerTask('dev', ['bower', 'bootstrap-compass', 'copy:favicon', 'copy:svg', 'imagemin:images', 'styles-dev', 'watch']);
 
     grunt.registerTask('styles', ['compass:compile', 'scsslint:all']);
     grunt.registerTask('styles-dev', ['compass:dev', 'scsslint:all']);
