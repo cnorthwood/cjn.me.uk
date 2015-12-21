@@ -2,7 +2,8 @@
   @include outer-container;
   @include pad(3rem default 3rem default);
 
-  p {
+  p,
+  li {
     max-width: 40em;
   }
 }
