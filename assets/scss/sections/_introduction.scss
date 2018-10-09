@@ -1,3 +1,26 @@
 .introduction {
   background-color: $light-background;
 }
+
+.introduction__body {
+  @include span-columns(12);
+
+  @include media($medium-screen) {
+    @include span-columns(6);
+  }
+}
+
+.introduction__hero {
+  @include span-columns(12);
+
+  @include media($medium-screen) {
+    @include span-columns(6);
+  }
+}
+
+.introduction__hero-image {
+  display: block;
+  margin: 0 auto;
+  max-height: 60vh;
+  max-width: 100%;
+}

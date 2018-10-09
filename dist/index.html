@@ -16,7 +16,8 @@
       "sameAs" : [ "https://www.facebook.com/cnorthwood",
                    "https://uk.linkedin.com/in/cnorthwood",
                    "https://twitter.com/cnorthwood",
-                   "https://medium.com/@cnorthwood" ],
+                   "https://medium.com/@cnorthwood",
+                   "https://www.bbc.co.uk/rd/people/chris-northwood" ],
       "image": "http://www.pling.org.uk/static/images/profile.jpg",
       "alumniOf": [{
         "name": "University of York",
@@ -50,7 +51,7 @@
     <header class="name-header">
         <div class="name-header__box">
             <h1 class="name-header__name">Chris Northwood</h1>
-            <h2 class="name-header__description">Professional Software Developer</h2>
+            <h2 class="name-header__description">Full-Stack Software Developer</h2>
         </div>
     </header>
 
@@ -65,15 +66,25 @@
 
     <section class="introduction" id="introduction">
         <div class="portfolio-section">
-            <p>Hello! This is the website and portfolio of Chris Northwood (I'm sometimes found online using the handle
-                <em>laser</em> or a variation and I hold the radio callsigns <em>M3NTW</em> and <em>2E0NTW</em>).</p>
+            <div class="introduction__body">
+                <p>Hello! This is the website and portfolio of Chris Northwood (I'm sometimes found online using the handle
+                    <em>laser</em> or a variation and I hold the radio callsigns <em>M3NTW</em> and <em>2E0NTW</em>).</p>
 
-            <p>I'm currently a Technologist working for <a href="http://www.bbc.co.uk/rd/">BBC Research &amp; Development</a>.</p>
+                <p>I'm currently a Technologist working for <a href="https://www.bbc.co.uk/rd/">BBC Research &amp; Development</a>.</p>
 
-            <p>I use <a href="https://twitter.com/cnorthwood">Twitter</a> quite a lot, and I occasionally blog at
-                <a href="https://medium.com/@cnorthwood">Medium</a>. You can also get in touch with me using
-                <a href="#get-in-touch">the details below</a>.</p>
+                <p>I help run <a href="https://www.barcampmanchester.co.uk">BarCamp Manchester</a>.</p>
 
+                <p>I use <a href="https://twitter.com/cnorthwood">Twitter</a> quite a lot, and I occasionally blog at
+                    <a href="https://medium.com/@cnorthwood">Medium</a>. You can also get in touch with me using
+                    <a href="#get-in-touch">the details below</a>.</p>
+            </div>
+            <div class="introduction__hero">
+                <a href="https://is.gd/fullstackbook"><img src="static/images/bookcover.jpg" alt="Book cover of The Full Stack Developer" class="introduction__hero-image"></a>
+                <p>I've written a book: The Full Stack Developer, published by Apress. It's the book I wish
+                    I had when I started as a junior developer, and covers almost everything I've learnt in
+                    my career so far. <a href="https://is.gd/fullstackbook">You can buy it from Amazon</a>.
+                </p>
+            </div>
         </div>
     </section>
 
@@ -85,9 +96,9 @@
                 <div class="belief belief--delivery">
                     <h3 class="belief__title">Delivery</h3>
                     <ul class="belief__list">
-                        <li>I believe in Continuous Delivery</li>
+                        <li>I believe in Continuous Delivery in a DevOps team</li>
                         <li>I believe in Agile projects and Kanban</li>
-                        <li>I'm a polyglot programmer, who believes in using the best tool for the job</li>
+                        <li>I'm a polyglot programmer, working across the full web stack, who believes in using the best tool for the job</li>
                     </ul>
                 </div>
 
@@ -140,13 +151,33 @@
                 <div class="what-ive-done__detail">
                     <h3 class="portfolio-section__item-title"><a href="http://www.bbc.co.uk/rd/blog/2017-11-running-an-ip-studio">The Trial Platform</a></h3>
                     <p class="portfolio-section__timestamp">October 2017 to present</p>
+                    <p class="portfolio-section__description">Project Lead</p>
+                </div>
+                <div class="what-ive-done__image">
+                    <img class="what-ive-done__screenshot" src="static/images/trial-platform.jpg" alt="">
                 </div>
             </div>
 
             <div class="what-ive-done__item">
                 <div class="what-ive-done__detail">
                     <h3 class="portfolio-section__item-title"><a href="http://www.bbc.co.uk/rd/projects/optic">Object-based Production Tools In the Cloud</a></h3>
-                    <p class="portfolio-section__timestamp">February 2016 to present</p>
+                    <p class="portfolio-section__timestamp">February 2016 to November 2017</p>
+                    <p>Technical Architect</p>
+                    <p>Published works: <a href="https://www.ibc.org/download?ac=3844">Northwood, C., & Wadge, R. (2018). An Architecture for Cloud-Based IP Video Production Tools. <i>SMPTE Motion Imaging Journal</i>, <i>127</i>(5), 32-37.</a></p>
+                </div>
+                <div class="what-ive-done__image">
+                    <img class="what-ive-done__screenshot" src="static/images/optic.png" alt="">
+                </div>
+            </div>
+
+            <div class="what-ive-done__item">
+                <div class="what-ive-done__detail">
+                    <h3 class="portfolio-section__item-title"><a href="http://www.bbc.co.uk/connectedstudio/toolkit/soma-live-capture">Single Operator Mixing Application</a></h3>
+                    <p class="portfolio-section__timestamp">May 2017 to present</p>
+                    <p class="portfolio-section__description">Product Owner</p>
+                </div>
+                <div class="what-ive-done__image">
+                    <img class="what-ive-done__screenshot" src="static/images/soma.png" alt="">
                 </div>
             </div>
 
@@ -154,6 +185,11 @@
                 <div class="what-ive-done__detail">
                     <h3 class="portfolio-section__item-title"><a href="http://www.bbc.co.uk/rd/projects/cake">Cook-Along Kitchen Experience</a></h3>
                     <p class="portfolio-section__timestamp">February 2016 to February 2017</p>
+                    <p class="portfolio-section__description">Technical Lead</p>
+                    <p>Published works: <a href="https://dl.acm.org/citation.cfm?id=3089912">Cox, J., Jones, R., Northwood, C., Tutcher, J., & Robinson, B. (2017, June). Object-Based Production: A Personalised Interactive Cooking Application. In <i>Adjunct Publication of the 2017 ACM International Conference on Interactive Experiences for TV and Online Video</i> (pp. 79-80). ACM.</a></p>
+                </div>
+                <div class="what-ive-done__image">
+                    <img class="what-ive-done__screenshot" src="static/images/cake.jpg" alt="">
                 </div>
             </div>
 
@@ -161,6 +197,7 @@
                 <div class="what-ive-done__detail">
                     <h3 class="portfolio-section__item-title"><a href="https://shift15.thoughtworks.com/">Paradigm Shift</a></h3>
                     <p class="portfolio-section__timestamp">September to October 2015</p>
+                    <p class="portfolio-section__description">Full-Stack Developer</p>
                 </div>
                 <div class="what-ive-done__image">
                     <img class="what-ive-done__screenshot" src="static/images/paradigm-shift.jpg" alt="">
@@ -171,6 +208,7 @@
                 <div class="what-ive-done__detail">
                     <h3 class="portfolio-section__item-title"><a href="http://www.bbc.co.uk/taster/">BBC Taster</a></h3>
                     <p class="portfolio-section__timestamp">September 2014 to August 2015</p>
+                    <p class="portfolio-section__description">Technical Lead</p>
                 </div>
                 <div class="what-ive-done__image">
                     <img class="what-ive-done__screenshot" src="static/images/bbc-taster.jpg" alt="">
@@ -180,7 +218,8 @@
             <div class="what-ive-done__item">
                 <div class="what-ive-done__detail">
                     <h3 class="portfolio-section__item-title"><a href="http://manchestertechnights.org/">Manchester Tech Nights</a></h3>
-                    <p class="portfolio-section__timestamp">November 2013 to present</p>
+                    <p class="portfolio-section__timestamp">November 2013 to December 2017</p>
+                    <p class="portfolio-section__description">Co-founder</p>
                 </div>
                 <div class="what-ive-done__image">
                     <img class="what-ive-done__screenshot" src="static/images/tech-nights.png" alt="">
@@ -191,6 +230,7 @@
                 <div class="what-ive-done__detail">
                     <h3 class="portfolio-section__item-title"><a href="http://www.bbc.co.uk/timelines/zpwy87h">Timelines</a></h3>
                     <p class="portfolio-section__timestamp">November 2013 to September 2014</p>
+                    <p class="portfolio-section__description">Technical Lead</p>
                 </div>
                 <div class="what-ive-done__image">
                     <img class="what-ive-done__screenshot" src="static/images/timelines.jpg" alt="">
@@ -201,6 +241,7 @@
                 <div class="what-ive-done__detail">
                     <h3 class="portfolio-section__item-title"><a href="http://www.bbc.co.uk/iwonder">BBC iWonder</a></h3>
                     <p class="portfolio-section__timestamp">September 2013 to January 2014</p>
+                    <p class="portfolio-section__description">Full-Stack Developer</p>
                 </div>
                 <div class="what-ive-done__image">
                     <img class="what-ive-done__screenshot" src="static/images/iwonder.jpg" alt="">
@@ -211,6 +252,7 @@
                 <div class="what-ive-done__detail">
                     <h3 class="portfolio-section__item-title"><a href="http://www.bbc.co.uk/education">BBC Bitesize</a></h3>
                     <p class="portfolio-section__timestamp">September 2012 to September 2013</p>
+                    <p class="portfolio-section__description">Full-Stack Developer</p>
                 </div>
                 <div class="what-ive-done__image">
                     <img class="what-ive-done__screenshot" src="static/images/curriculum.jpg" alt="">
@@ -221,6 +263,7 @@
                 <div class="what-ive-done__detail">
                     <h3 class="portfolio-section__item-title"><a href="http://www.bbc.co.uk/mediacentre/latestnews/2012/04122012connectedredbutton.html">Connected Red Button</a></h3>
                     <p class="portfolio-section__timestamp">March 2012 to September 2012</p>
+                    <p class="portfolio-section__description">Full-Stack Developer</p>
                 </div>
                 <div class="what-ive-done__image">
                     <img class="what-ive-done__screenshot" src="static/images/connected-red-button.jpg" alt="">
@@ -231,6 +274,7 @@
                 <div class="what-ive-done__detail">
                     <h3 class="portfolio-section__item-title"><a href="http://www.bbc.co.uk/cbbc/games/bp-quiz-dog-or-cheese">Games Grid</a></h3>
                     <p class="portfolio-section__timestamp">September 2011 to March 2012</p>
+                    <p class="portfolio-section__description">Back-end Developer</p>
                 </div>
                 <div class="what-ive-done__image">
                     <img class="what-ive-done__screenshot" src="static/images/games-grid.jpg" alt="">
@@ -241,6 +285,7 @@
                 <div class="what-ive-done__detail">
                     <h3 class="portfolio-section__item-title"><a href="https://m.ox.ac.uk/">Mobile Oxford</a></h3>
                     <p class="portfolio-section__timestamp">November 2010 to August 2011</p>
+                    <p class="portfolio-section__description">Full-Stack Developer</p>
                 </div>
                 <div class="what-ive-done__image">
                     <img class="what-ive-done__screenshot" src="static/images/mobile-oxford.png" alt="">
@@ -249,8 +294,17 @@
 
             <div class="what-ive-done__item">
                 <div class="what-ive-done__detail">
+                    <h3 class="portfolio-section__item-title"><a href="https://github.com/cnorthwood/ternip/">Temporal Expression Recognition &amp; Normalisation in Python</a></h3>
+                    <p class="portfolio-section__timestamp">March 2010 to August 2010</p>
+                    <p class="portfolio-section__description">MSc Thesis</p>
+                </div>
+            </div>
+
+            <div class="what-ive-done__item">
+                <div class="what-ive-done__detail">
                     <h3 class="portfolio-section__item-title"><a href="http://www.nouse.co.uk/">Nouse</a></h3>
                     <p class="portfolio-section__timestamp">October 2008 to September 2009</p>
+                    <p class="portfolio-section__description">Technical Lead</p>
                 </div>
                 <div class="what-ive-done__image">
                     <img class="what-ive-done__screenshot" src="static/images/nouse.jpg" alt="">
@@ -261,6 +315,7 @@
                 <div class="what-ive-done__detail">
                     <h3 class="portfolio-section__item-title"><a href="https://www.sophos.com/en-us/products/free-tools/sophos-antivirus-for-linux.aspx">Sophos Anti-Virus for Linux</a></h3>
                     <p class="portfolio-section__timestamp">July 2007 to July 2008</p>
+                    <p class="portfolio-section__description">QA Engineer &amp; Intern Developer</p>
                 </div>
                 <div class="what-ive-done__image">
                     <img class="what-ive-done__screenshot" src="static/images/sophos.jpg" alt="">
@@ -274,8 +329,6 @@
                         <li><a href="http://www.pling.org.uk/railsim/">Rail Simulator scenarios</a></li>
                         <li><a href="http://www.pling.org.uk/whereisthenorthreally/">Where is the North, really?</a></li>
                         <li><a href="https://wordpress.org/plugins/live-blogging/">Live Blogging for WordPress (unmaintained)</a></li>
-                        <li><a href="https://github.com/cnorthwood/ternip">Temporal Expression Recognition and Normalisation in Python (unmaintained)</a></li>
-                        <li><a href="http://beta.manchester.io/">manchester.io (unmaintained)</a></li>
                     </ul>
                 </div>
             </div>
