@@ -32,15 +32,15 @@
   }
 }
 
-.belief--delivery .belief__title:after {
+.belief--delivery .belief__title::after {
   @include belief-icon('delivery.svg');
 }
 
-.belief--development .belief__title:after {
+.belief--development .belief__title::after {
   @include belief-icon('development.svg');
 }
 
-.belief--teamwork .belief__title:after {
+.belief--teamwork .belief__title::after {
   @include belief-icon('teamwork.svg');
 }
 
