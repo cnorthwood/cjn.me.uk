@@ -1,6 +1,6 @@
 
 .navigator {
-  background-color: rgba($dark-background, .7);
+  background-color: rgba($highlight, .7);
   color: $light-foreground;
 }
 
@@ -49,7 +49,7 @@
 
   &:focus,
   &:hover {
-    background-color: $dark-background;
+    background-color: $highlight;
     color: $light-foreground;
     text-decoration: none;
     transition: .4s;

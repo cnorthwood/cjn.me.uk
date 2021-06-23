@@ -7,6 +7,10 @@
 
   @include media($medium-screen) {
     @include span-columns(6);
+
+    p:first-child {
+      margin-top: 0;
+    }
   }
 }
 
@@ -15,6 +19,10 @@
 
   @include media($medium-screen) {
     @include span-columns(6);
+
+    p:first-child {
+      margin-top: 0;
+    }
   }
 }
 

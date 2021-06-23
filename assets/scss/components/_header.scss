@@ -1,27 +1,19 @@
 .name-header {
-  background: $dark-background image-url('profile.jpg') 83% center;
-  background-size: cover;
+  align-items: center;
+  background: $highlight;
   color: $light-foreground;
-  height: 50vh;
-  max-height: 640px;
-  min-height: 320px;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 32px;
   text-align: center;
   width: 100%;
-
-  @include media($medium-screen) {
-    min-height: 480px;
-  }
 }
 
 .name-header__box {
   background-color: rgba($dark-background, .7);
   border: 4px solid $dark-background;
-  display: inline-block;
-  margin: 0 auto;
+  flex: 0 1 auto;
   padding: 0 1em;
-  position: relative;
-  top: 70%;
 }
 
 .name-header__name {
@@ -32,4 +24,8 @@
 .name-header__description {
   @extend %subheading;
   padding: 0;
+}
+
+.profile-image {
+  text-align: center;
 }
