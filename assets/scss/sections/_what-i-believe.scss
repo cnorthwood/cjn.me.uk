@@ -1,5 +1,5 @@
 @mixin belief-icon($icon-url) {
-  background: image-url($icon-url) no-repeat center;
+  background: url("../images/" + $icon-url) no-repeat center;
   background-size: contain;
   content: '';
   display: block;

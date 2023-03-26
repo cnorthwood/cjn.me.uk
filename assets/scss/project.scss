@@ -1,6 +1,8 @@
-@import 'bourbon';
-@import 'neat';
+@import '../../node_modules/bourbon/app/assets/stylesheets/bourbon';
+@import '../../node_modules/bourbon-neat/app/assets/stylesheets/neat';
+@import '../../node_modules/font-awesome/scss/font-awesome';
 
+@import 'base/utilities';
 @import 'base/base';
 @import 'base/colours';
 @import 'base/typography';
